@@ -68,7 +68,7 @@ function randomizeBoxOrder(boxArray)
 
 function getLoopResults(prisonerArray, boxArray)
 {
-    for(c = 0; c < 1000; c++)
+    for(c = 0; c < 1000000; c++)
     {
         if(passCount == 100)
         {
@@ -186,9 +186,9 @@ function showStatsResults()
     const successRate = document.createElement("div");
     const firstPassSuccessRate = document.createElement("div");
 
-    successRate.textContent = "Total success rate was " + totalPassCount + "/1000 = " + "or " + Math.round((totalPassCount/1000) * 100) + "%";
+    successRate.textContent = "Total success rate was " + totalPassCount + "/1,000,000 = " + "or " + ((totalPassCount/1000000) * 100).toFixed(3) + "%";
 
-    firstPassSuccessRate.textContent = "Success rate if first prisoner passes was " + `${totalPassCount}/${firstPassTotalSuccess} = ` + "or " + Math.round((totalPassCount/(firstPassTotalSuccess)) * 100) + "%";
+    firstPassSuccessRate.textContent = "Success rate if first prisoner passes was " + `${totalPassCount}/${firstPassTotalSuccess} = ` + "or " + ((totalPassCount/(firstPassTotalSuccess)) * 100).toFixed(3) + "%";
 
     container.appendChild(successRate);
     container.appendChild(firstPassSuccessRate);
