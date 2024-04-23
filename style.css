@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    margin: 5px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+table, tr, th, td{
+    border: 1px solid black;
+}
+
+.passFail{
+    margin-bottom: 10px;
+}
+
+h4{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
